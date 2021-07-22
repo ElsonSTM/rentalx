@@ -1,5 +1,5 @@
 import {response, Router} from 'express';
-import { CreateCategoryService } from '../../services/CreateCategoryService';
+import { CreateCategoryService } from '../services/CreateCategoryService';
 
 import { Category } from '../model/Category';
 import { CategoriesRepository } from "../repositories/CategoriesRepository";
