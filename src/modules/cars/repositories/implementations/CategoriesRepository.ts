@@ -1,5 +1,5 @@
-import { Category } from "../model/Category";
-import { ICategoriesRepository, ICreateCategoryDTO } from "./ICategoryRepository";
+import { Category } from "../../model/Category";
+import { ICategoriesRepository, ICreateCategoryDTO } from "./../ICategoryRepository";
 
 // DTO => Data tranfer object
 
@@ -7,7 +7,7 @@ import { ICategoriesRepository, ICreateCategoryDTO } from "./ICategoryRepository
 class CategoriesRepository implements ICategoriesRepository {
     private categories: Category[];
 
-    private static INSTANCE: CategoriesRepository;
+    private static INSTANCE: CategoriesRepository; //Aplicando o padrao de projeto SINGLETON
 
     private constructor() {
         this.categories = [];
